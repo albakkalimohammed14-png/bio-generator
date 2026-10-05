@@ -9,48 +9,43 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[
-{"@type":"WebApplication","name":"مولد بايو إنستغرام بالعربية","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","inLanguage":"ar","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},
-{"@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"كم حرفا يسمح به بايو إنستغرام؟","acceptedAnswer":{"@type":"Answer","text":"يسمح إنستغرام بحوالي 150 حرفا في البايو، لذلك نقترح بايوهات قصيرة تناسب هذا الحد."}},
-{"@type":"Question","name":"هل الأداة مجانية؟","acceptedAnswer":{"@type":"Answer","text":"نعم، مجانية بالكامل وبدون تسجيل."}},
-{"@type":"Question","name":"هل يمكنني تعديل البايو بعد النسخ؟","acceptedAnswer":{"@type":"Answer","text":"نعم، انسخ البايو الذي يعجبك وعدّله كما تشاء قبل لصقه في حسابك."}},
-{"@type":"Question","name":"لماذا تتشابه بعض النتائج؟","acceptedAnswer":{"@type":"Answer","text":"عند الضغط الكبير نعرض قوالب جاهزة بدل الذكاء الاصطناعي. جرّب صياغة مختلفة للنشاط للحصول على نتائج جديدة."}}
-]}]}
+{"@context":"https://schema.org","@type":"WebApplication","name":"مولد بايو إنستغرام بالعربية","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","inLanguage":"ar","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
 </script>
 <style>
-:root{--ink:#241446;--mut:#6b5f8a;--bg:#f7f4fd;--card:#fff;--acc:#d6246e;--line:#e3dcf3}
+:root{--ink:#241446;--mut:#6b5f8a;--bg:#f4f0fb;--card:#fff;--acc:#d6246e;--line:#e3dcf3}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.8 "IBM Plex Sans Arabic",Tahoma,sans-serif}
-.wrap{max-width:640px;margin:0 auto;padding:28px 18px 60px}
-h1{font-size:30px;line-height:1.4;margin:6px 0 8px;font-weight:700}
+.wrap{max-width:600px;margin:0 auto;padding:26px 16px 60px}
+h1{font-size:32px;line-height:1.4;margin:6px 0 8px;font-weight:700;border-inline-start:5px solid var(--acc);padding-inline-start:12px}
 h2{font-size:21px;margin:36px 0 8px}
-.lead{color:var(--mut);margin:0 0 22px}
+.lead{color:var(--mut);margin:0 0 20px}
+.tool{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:6px 18px 22px;box-shadow:0 8px 26px rgba(36,20,70,.07)}
 label,legend{display:block;font-weight:700;margin:16px 0 6px;padding:0}
 fieldset{border:0;margin:0;padding:0}
-input[type=text]{width:100%;padding:12px 14px;font:inherit;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+input[type=text]{width:100%;padding:13px 14px;font:inherit;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:var(--ink)}
 input:focus-visible,button:focus-visible,.seg input:focus-visible+span{outline:3px solid var(--acc);outline-offset:2px}
 .seg{display:flex;gap:8px;flex-wrap:wrap}
 .seg label{margin:0;font-weight:400}
 .seg input{position:absolute;opacity:0}
-.seg span{display:block;padding:8px 16px;border:1.5px solid var(--line);border-radius:999px;background:#fff;cursor:pointer}
+.seg span{display:block;padding:8px 18px;border:1.5px solid var(--line);border-radius:999px;background:#fff;cursor:pointer}
 .seg input:checked+span{background:var(--ink);color:#fff;border-color:var(--ink)}
 .chk{display:flex;align-items:center;gap:8px;font-weight:400;margin-top:14px}
-.go{margin-top:20px;width:100%;padding:13px;font-family:inherit;font-weight:700;font-size:18px;color:#fff;background:var(--acc);border:0;border-radius:10px;cursor:pointer}
+.go{margin-top:20px;width:100%;padding:14px;font-family:inherit;font-weight:700;font-size:18px;color:#fff;background:var(--acc);border:0;border-radius:12px;cursor:pointer;box-shadow:0 6px 16px rgba(214,36,110,.28)}
 .go[disabled]{opacity:.6;cursor:wait}
 .note{color:var(--mut);font-size:15px;margin:12px 0 0}
-.ig{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-top:14px;display:flex;gap:14px;align-items:flex-start}
-.av{flex:none;width:52px;height:52px;border-radius:50%;border:3px solid var(--acc);display:grid;place-items:center;font-weight:700;color:var(--acc);background:var(--bg)}
+.ig{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin-top:14px;display:flex;gap:14px;align-items:flex-start}
+.av{flex:none;width:54px;height:54px;border-radius:50%;border:3px solid var(--acc);display:grid;place-items:center;font-weight:700;font-size:20px;color:var(--acc);background:var(--bg)}
 .ig .h{font-weight:700;font-size:15px;color:var(--mut);direction:ltr;text-align:right}
-.ig p{margin:2px 0 8px;overflow-wrap:anywhere}
-.cp{font:inherit;font-size:15px;padding:5px 14px;border:1.5px solid var(--ink);background:#fff;color:var(--ink);border-radius:8px;cursor:pointer}
+.ig p{margin:2px 0 10px;overflow-wrap:anywhere}
+.cp{font-family:inherit;font-size:15px;padding:6px 16px;border:1.5px solid var(--ink);background:#fff;color:var(--ink);border-radius:9px;cursor:pointer}
 .cp.ok{background:var(--ink);color:#fff}
 .cnt{color:var(--mut);font-size:14px;margin-inline-start:10px}
 .ad{margin:22px 0;text-align:center}
 details{border-top:1px solid var(--line);padding:12px 0}
 summary{cursor:pointer;font-weight:700}
 details p{margin:8px 0 0;color:var(--mut)}
-@media (prefers-reduced-motion:no-preference){.ig{animation:in .25s ease-out}@keyframes in{from{opacity:0;transform:translateY(6px)}}}
+footer{margin-top:34px;color:var(--mut);font-size:14px;text-align:center}
+@media (prefers-reduced-motion:no-preference){.ig{animation:pop .25s ease-out}@keyframes pop{from{opacity:0;transform:translateY(6px)}}}
 </style>
 </head>
 <body>
@@ -61,7 +56,7 @@ details p{margin:8px 0 0;color:var(--mut)}
 <!-- AD SLOT TOP: ضع هنا كود Adsterra Native Banner -->
 <div class="ad" id="ad-top"></div>
 
-<form id="f" autocomplete="off">
+<form id="f" class="tool" autocomplete="off">
   <label for="t">نشاطك أو اهتمامك</label>
   <input type="text" id="t" maxlength="60" placeholder="مثال: التصوير، مطعم، تصميم أزياء" required>
   <fieldset>
@@ -87,12 +82,102 @@ details p{margin:8px 0 0;color:var(--mut)}
 <details><summary>هل الأداة مجانية؟</summary><p>نعم، مجانية بالكامل وبدون تسجيل.</p></details>
 <details><summary>هل يمكنني تعديل البايو بعد النسخ؟</summary><p>نعم، انسخ البايو الذي يعجبك وعدّله كما تشاء قبل لصقه في حسابك.</p></details>
 <details><summary>لماذا تتشابه بعض النتائج؟</summary><p>عند الضغط الكبير نعرض قوالب جاهزة بدل الذكاء الاصطناعي. جرّب صياغة مختلفة للنشاط للحصول على نتائج جديدة.</p></details>
+<footer>مولد بايو إنستغرام بالعربية</footer>
 </main>
 
 <script>
-// ====== إعدادات الصفحة (غيّرها عند نسخ الصفحة لفئة أخرى) ======
 const CONFIG = { maxAiPerHour: 5 };
 
 const T = {
   formal: ["{t} | نقدّم الجودة بكل التزام","متخصصون في {t} وخبرة تثق بها","{t} باحترافية ودقة","هنا نصنع الفرق في {t}","رحلتنا مع {t} بدأت بشغف واستمرت بإتقان","{t} للتواصل والطلبات عبر الرسائل","جودة ثابتة في {t} وخدمة تليق بك","كل ما يخص {t} في مكان واحد"],
-  fun: ["أحب {t} أكثر مما أحب القهوة","{t} ليس مجرد عمل، بل أسلوب حياة","إذا سمعت {t} فاعلم أنني قريب","بين القهوة و{t} أقضي أجمل أوقاتي","{t} كل يوم، والملل غير مرحّب به","نصف وقتي في {t} والنصف الآخر أفكر فيه","قاع
+  fun: ["أحب {t} أكثر مما أحب القهوة","{t} ليس مجرد عمل، بل أسلوب حياة","إذا سمعت {t} فاعلم أنني قريب","بين القهوة و{t} أقضي أجمل أوقاتي","{t} كل يوم، والملل غير مرحّب به","نصف وقتي في {t} والنصف الآخر أفكر فيه","قاعدتي: ابتسم ثم ابدأ في {t}","{t} وقليل من الجنون"],
+  inspiring: ["اصنع من {t} قصة تُلهم الآخرين","{t} بداية الحلم وليس نهايته","كل خطوة في {t} تقرّبك من نسختك الأفضل","آمن بـ{t} وسترى الفرق","أحلم في {t} وأعمل بصمت","من {t} تعلمت أن الصبر يصنع المعجزات","اجعل {t} رسالتك وسيتبعك النجاح","كن أنت وأبدع في {t}"]
+};
+const EMO = { formal:["✨","📩","✅"], fun:["☕","😄","🔥"], inspiring:["🌟","💫","🚀"] };
+
+const $ = id => document.getElementById(id);
+const store = {
+  get(k,d){ try{ const v = JSON.parse(localStorage.getItem(k)); return v === null ? d : v }catch(e){ return d } },
+  set(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)) }catch(e){} }
+};
+
+function fromTemplates(t, tone, emoji){
+  const pool = T[tone].slice().sort(()=>Math.random()-.5).slice(0,5);
+  return pool.map(s=>{
+    const b = s.split("{t}").join(t);
+    return emoji ? b + " " + EMO[tone][Math.floor(Math.random()*3)] : b;
+  });
+}
+
+async function fromAI(t, tone, emoji){
+  const ctl = new AbortController();
+  const timer = setTimeout(()=>ctl.abort(), 12000);
+  try{
+    const res = await fetch("/api/generate",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({topic:t,tone:tone,emoji:emoji}),signal:ctl.signal});
+    if(!res.ok) return null;
+    const d = await res.json();
+    return Array.isArray(d.bios) && d.bios.length >= 3 ? d.bios : null;
+  }catch(e){ return null } finally{ clearTimeout(timer) }
+}
+
+function render(bios, t){
+  const box = $("r"); box.textContent = "";
+  bios.forEach(text=>{
+    const card = document.createElement("div"); card.className = "ig";
+    const av = document.createElement("div"); av.className = "av"; av.textContent = Array.from(t)[0] || "B";
+    const body = document.createElement("div");
+    const h = document.createElement("div"); h.className = "h"; h.textContent = "@your.name";
+    const p = document.createElement("p"); p.textContent = text;
+    const btn = document.createElement("button"); btn.type = "button"; btn.className = "cp"; btn.textContent = "انسخ";
+    const cnt = document.createElement("span"); cnt.className = "cnt"; cnt.textContent = Array.from(text).length + " حرف";
+    btn.onclick = async ()=>{
+      try{ await navigator.clipboard.writeText(text) }catch(e){
+        const ta = document.createElement("textarea"); ta.value = text; document.body.appendChild(ta); ta.select(); document.execCommand("copy"); ta.remove();
+      }
+      btn.textContent = "تم النسخ"; btn.classList.add("ok");
+      setTimeout(()=>{ btn.textContent = "انسخ"; btn.classList.remove("ok") }, 1800);
+    };
+    body.appendChild(h); body.appendChild(p); body.appendChild(btn); body.appendChild(cnt);
+    card.appendChild(av); card.appendChild(body); box.appendChild(card);
+  });
+}
+
+$("f").addEventListener("submit", async ev=>{
+  ev.preventDefault();
+  const note = $("n"), btn = $("b");
+  const t = $("t").value.trim().slice(0,60);
+  if(t.length < 2) return;
+  const tone = document.querySelector('input[name=tone]:checked').value;
+  const emoji = $("e").checked;
+  note.textContent = "";
+  btn.disabled = true; btn.textContent = "جارٍ التوليد...";
+  try{
+    const key = [t,tone,emoji].join("|");
+    const cache = store.get("bioCache",{});
+    if(cache[key]){ render(cache[key], t); return }
+
+    const now = Date.now();
+    const hits = store.get("bioAi",[]).filter(x=>now-x < 3600000);
+    let bios = null;
+    if(hits.length < CONFIG.maxAiPerHour){
+      bios = await fromAI(t, tone, emoji);
+      if(bios){ hits.push(now); store.set("bioAi", hits) }
+    } else {
+      note.textContent = "وصلت حد التوليد بالذكاء الاصطناعي لهذه الساعة، فعرضنا لك قوالب جاهزة.";
+    }
+    if(!bios) bios = fromTemplates(t, tone, emoji);
+
+    const keys = Object.keys(cache);
+    if(keys.length > 30) delete cache[keys[0]];
+    cache[key] = bios; store.set("bioCache", cache);
+    render(bios, t);
+    $("r").scrollIntoView({behavior:"smooth",block:"nearest"});
+  }catch(e){
+    try{ render(fromTemplates(t, tone, emoji), t) }catch(e2){ note.textContent = "حدث خطأ، حاول مرة أخرى." }
+  }finally{
+    btn.disabled = false; btn.textContent = "ولّد البايو";
+  }
+});
+</script>
+</body>
+</html>
