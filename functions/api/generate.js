@@ -1,6 +1,5 @@
-// Cloudflare Pages Function: POST /api/generate
-// Needs a Workers AI binding named "AI" (Pages > Settings > Bindings).
-const MODEL = "@cf/meta/llama-3.1-8b-instruct"; // change here if Cloudflare renames/removes it
+// Cloudflare Pages Function: /api/generate
+const MODEL = "@cf/meta/llama-3.1-8b-instruct";
 const TONES = { formal: "رسمية ومهنية", fun: "مرحة وخفيفة", inspiring: "ملهمة وتحفيزية" };
 
 const json = (data, status = 200) =>
@@ -8,6 +7,24 @@ const json = (data, status = 200) =>
     status,
     headers: { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-store" },
   });
+
+// فحص: افتح /api/generate في المتصفح
+export async function onRequestGet({ env }) {
+  const info = { hasAI: !!(env && env.AI), model: MODEL };
+  try {
+    if (!env.AI) throw new Error("AI binding missing");
+    const o = await env.AI.run(MODEL, {
+      max_tokens: 20,
+      messages: [{ role: "user", content: "قل مرحبا" }],
+    });
+    info.ok = true;
+    info.sample = o.response;
+  } catch (e) {
+    info.ok = false;
+    info.error = String((e && e.message) || e);
+  }
+  return json(info);
+}
 
 export async function onRequestPost({ request, env }) {
   try {
@@ -39,6 +56,6 @@ export async function onRequestPost({ request, env }) {
     if (bios.length < 3) return json({ error: "too_few" }, 502);
     return json({ bios });
   } catch (e) {
-    return json({ error: "failed" }, 500);
+    return json({ error: "failed", detail: String((e && e.message) || e) }, 500);
   }
 }
